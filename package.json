@@ -1,8 +1,14 @@
 {
   "name": "truffle-nest-box",
   "version": "0.0.1",
-  "description": "",
-  "author": "",
+  "description": "This box comes with everything you need to get started with Nest.js and Truffle",
+  "keywords": [
+    "nestjs",
+    "truffle",
+    "ethers",
+    "typescript"
+  ],
+  "author": "ikhvost & titovb",
   "license": "MIT",
   "scripts": {
     "prebuild": "rimraf dist",

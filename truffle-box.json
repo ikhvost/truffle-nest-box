@@ -1,0 +1,19 @@
+{
+  "ignore": [
+    "README.md",
+    "box-img-lg",
+    "box-img-sm"
+  ],
+  "commands": {
+    "Compile": "truffle compile",
+    "Migrate": "truffle migrate",
+    "Test contracts": "truffle test",
+    "Test API": "npm test",
+    "Build server": "npm run build",
+    "Run in live mode": "npm run start:dev",
+    "Run using dist": "npm run start:prod"
+  },
+  "hooks": {
+    "post-unpack": "npm install"
+  }
+}
