@@ -1,75 +1,50 @@
 <p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
+  <a href="#"><img src="./box-img-sm.png" alt="Logo" /></a>
 </p>
 
-[travis-image]: https://api.travis-ci.org/nestjs/nest.svg?branch=master
-[travis-url]: https://travis-ci.org/nestjs/nest
-[linux-image]: https://img.shields.io/travis/nestjs/nest/master.svg?label=linux
-[linux-url]: https://travis-ci.org/nestjs/nest
-  
-  <p align="center">A progressive <a href="http://nodejs.org" target="blank">Node.js</a> framework for building efficient and scalable server-side applications, heavily inspired by <a href="https://angular.io" target="blank">Angular</a>.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore"><img src="https://img.shields.io/npm/dm/@nestjs/core.svg" alt="NPM Downloads" /></a>
-<a href="https://travis-ci.org/nestjs/nest"><img src="https://api.travis-ci.org/nestjs/nest.svg?branch=master" alt="Travis" /></a>
-<a href="https://travis-ci.org/nestjs/nest"><img src="https://img.shields.io/travis/nestjs/nest/master.svg?label=linux" alt="Linux" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#5" alt="Coverage" /></a>
-<a href="https://gitter.im/nestjs/nestjs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=body_badge"><img src="https://badges.gitter.im/nestjs/nestjs.svg" alt="Gitter" /></a>
-<a href="https://opencollective.com/nest#backer"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec"><img src="https://img.shields.io/badge/Donate-PayPal-dc3d53.svg"/></a>
-  <a href="https://twitter.com/nestframework"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+# Truffle-NestJS-Box
+To Be Used as Truffle Box Creating API Endpoints for
+Ethereum Blockchain.
 
-## Description
+We use personalised blockchain for Ethereum BlockChain
+Development. This personalised blockchain is made in the
+GanacheCLI.
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+The Smart Contract Written in solidity language
+is deployed on this Ethereum Blockchain. Smart Contract is
+Immutable hence, once deployed it can't be changed.
 
-## Installation
+A truffle box to serve as the foundation of any Truffle and Nest.js dApp.
 
-```bash
-$ npm install
+**Pre-Requisites**
+1. [NodeJS](https://nodejs.org/)
+2. [NestJS](https://nestjs.com/)
+3. [GanacheCLI](https://github.com/trufflesuite/ganache-cli)
+4. [Truffle](https://github.com/trufflesuite/truffle)
+
+**Installation**
+1. Install Truffle, Ganache CLI and NestJS globally. If you prefer, the graphical version of Ganache works as well!
+```
+npm install -g truffle
+npm install -g ganache-cli
+npm install -g @nestjs/cli
 ```
 
-## Running the app
-
-```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
+2. Download the box. This also takes care of installing the necessary dependencies.
+```
+truffle unbox ikhvost/truffle-nest-box
 ```
 
-## Test
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
+3. Run the ganache-cli.
+```
+ganache-cli
 ```
 
-## Support
+4. Now these contracts need to be compiled and deployed on the Blockchain. For this, run `truffle migrate` inside project root directory. 
+5. You can see that a new `/build` folder has been created in the root directory which contains the compiled contracts.
+6. To run the Node server `npm start`.
+7. Server will be available on `http://localhost:3000/`.
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-  Nest is [MIT licensed](LICENSE).
+**Collaborators**
+1. [Illia Khvost](https://github.com/ikhvost)
+2. [Bohdan Titov](https://github.com/titovb)
