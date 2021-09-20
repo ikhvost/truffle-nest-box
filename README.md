@@ -42,8 +42,9 @@ ganache-cli
 
 4. Now these contracts need to be compiled and deployed on the Blockchain. For this, run `truffle migrate` inside project root directory. 
 5. You can see that a new `/build` folder has been created in the root directory which contains the compiled contracts.
-6. To run the Node server `npm start`.
-7. Server will be available on `http://localhost:3000/`.
+6. Create `.env` file in root directory and pass to `METACOIN_ADDRESS` address of created contract from blockchain network. (You have `.env.template` as a sample)
+7. To run the Node server `npm start`.
+8. Server will be available on `http://${APP_HOST}:${APP_PORT}/`.
 
 **Collaborators**
 1. [Illia Khvost](https://github.com/ikhvost)
